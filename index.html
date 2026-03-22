@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deload | We build presence where attention matters</title>
+    <meta name="description" content="Deload is a creative agency helping small businesses thrive through stunning websites, scroll-stopping content, and cinematic video.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body class="loading">
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container container">
+            <a href="#" class="logo">Deloa<span class="accent-text">d</span></a>
+            <div class="nav-links" id="nav-links">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="hamburger" aria-label="Menu" id="hamburger">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="btn btn-primary mt-sm mobile-cta">Get Started</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background-mesh">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 class="hero-title reveal-text">We build presence <br>where <span class="accent-text">attention</span> matters.</h1>
+                <p class="hero-subtitle reveal-up stagger-1">Deload is a creative agency helping small businesses thrive — through stunning websites, scroll-stopping content, and cinematic video.</p>
+                <div class="hero-ctas reveal-up stagger-2">
+                    <a href="#work" class="btn btn-ghost pulse-hover interactable">See Our Work</a>
+                    <a href="#contact" class="btn btn-primary shadow-glow interactable">Start a Project</a>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator reveal-up stagger-3">
+                <i class="ri-arrow-down-line scroll-arrow"></i>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section-padding" id="services">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">What We Do</h2>
+                </div>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card reveal-up stagger-1">
+                        <div class="service-icon"><i class="ri-code-s-slash-line"></i></div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-desc">We design and build fast, beautiful websites that convert visitors into customers.</p>
+                        <a href="#contact" class="service-link interactable">Learn More <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card reveal-up stagger-2">
+                        <div class="service-icon"><i class="ri-smartphone-line"></i></div>
+                        <h3 class="service-title">Social Media Management</h3>
+                        <p class="service-desc">From strategy to execution — we manage your content calendar, create reels, and grow your audience.</p>
+                        <a href="#contact" class="service-link interactable">Learn More <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card reveal-up stagger-3">
+                        <div class="service-icon"><i class="ri-video-chat-line"></i></div>
+                        <h3 class="service-title">Video & Videography</h3>
+                        <p class="service-desc">Professional video editing and on-site videography to tell your brand story with impact.</p>
+                        <a href="#contact" class="service-link interactable">Learn More <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Deload -->
+        <section class="why-deload section-padding" id="about">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Why Choose Deload?</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item reveal-up stagger-1">
+                        <div class="stat-number accent-text" style="font-family: var(--font-heading); font-size: 3.5rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800;"><span class="count-up" data-target="24">0</span><span style="font-size: 1.5rem;">/7</span></div>
+                        <h4 class="stat-title">Fast Turnaround</h4>
+                        <p class="stat-desc">We move at the speed of culture, delivering high-quality assets without the typical agency drag.</p>
+                    </div>
+                    <div class="stat-item reveal-up stagger-2">
+                        <div class="stat-number accent-text" style="font-family: var(--font-heading); font-size: 3.5rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800;"><span class="count-up" data-target="100">0</span><span style="font-size: 1.5rem;">%</span></div>
+                        <h4 class="stat-title">Small Business Focused</h4>
+                        <p class="stat-desc">We understand the unique constraints and ambitious goals of growing businesses.</p>
+                    </div>
+                    <div class="stat-item reveal-up stagger-3">
+                        <div class="stat-number accent-text" style="font-family: var(--font-heading); font-size: 3.5rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800;"><span style="font-size: 2rem;">$</span><span class="count-up" data-target="5">0</span><span style="font-size: 1.5rem;">M+</span></div>
+                        <h4 class="stat-title">Results-Driven</h4>
+                        <p class="stat-desc">Aesthetics matter, but ROI matters more. Everything we build is designed to perform.</p>
+                    </div>
+                    <div class="stat-item reveal-up stagger-4">
+                        <div class="stat-number accent-text" style="font-family: var(--font-heading); font-size: 3.5rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800;"><span class="count-up" data-target="0">0</span><span style="font-size: 1.5rem;"> BS</span></div>
+                        <h4 class="stat-title">Transparent Process</h4>
+                        <p class="stat-desc">No hidden fees or confusing jargon. You always know exactly what we're doing and why.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Reach Section -->
+        <section class="global-reach section-padding">
+            <div class="container text-center">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">We Work Everywhere</h2>
+                    <p class="section-subtitle mx-auto">From local streets to global markets — Deload delivers for businesses no matter where they are.</p>
+                </div>
+                
+                <div class="globe-wrapper reveal-up stagger-1">
+                    <div class="globe-container">
+                        <div class="globe">
+                            <div class="globe-grid"></div>
+                        </div>
+                        <!-- Pin directly on globe -->
+                        <div class="globe-pin">
+                            <div class="pin-dot"></div>
+                            <div class="pin-pulse"></div>
+                            <div class="pin-pulse delay"></div>
+                        </div>
+                        
+                        <!-- Badge Chips -->
+                        <div class="globe-badges">
+                            <div class="chip chip-1">🇺🇸 North America</div>
+                            <div class="chip chip-2">🇬🇧 Europe</div>
+                            <div class="chip chip-3">🇦🇪 Middle East</div>
+                            <div class="chip chip-4">🇮🇳 South Asia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process section-padding" id="process">
+            <div class="container">
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-content reveal-up">
+                            <h3 class="step-title">We Get To Know Exactly What You Need</h3>
+                            <p class="step-desc">No assumptions. No templates. We start with a real conversation to understand your business, your goals, and what success looks like for YOU — then we map it all out into a clear plan.</p>
+                        </div>
+                        <div class="step-graphic reveal-up stagger-1">
+                            <div class="watermark-number">01</div>
+                            <div class="css-shape shape-ear">
+                                <i class="ri-chat-voice-fill shape-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-connector hide-mobile">
+                        <div class="connector-line"></div>
+                        <div class="connector-dot"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step reverse">
+                        <div class="step-graphic reveal-up stagger-1">
+                            <div class="watermark-number">02</div>
+                            <div class="css-shape shape-rocket">
+                                <i class="ri-rocket-fill shape-icon"></i>
+                            </div>
+                        </div>
+                        <div class="step-content reveal-up">
+                            <h3 class="step-title">We Help You Achieve It</h3>
+                            <p class="step-desc">From the first pixel to the final cut — we execute with precision and creativity. You stay in the loop, we handle the heavy lifting. Simple.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Work -->
+        <section class="portfolio section-padding" id="work">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Our Work</h2>
+                </div>
+                <div class="work-grid">
+                    <!-- Project 1 -->
+                    <a href="#" class="work-card reveal-up interactable">
+                        <div class="work-img project-1"></div>
+                        <div class="work-overlay">
+                            <div class="work-info">
+                                <span class="work-tag">Web Design</span>
+                                <h3 class="work-name">Aura Wellness</h3>
+                                <div class="view-project-btn"><i class="ri-arrow-right-up-line"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Project 2 -->
+                    <a href="#" class="work-card reveal-up stagger-1 interactable">
+                        <div class="work-img project-2"></div>
+                        <div class="work-overlay">
+                            <div class="work-info">
+                                <span class="work-tag">Social + Video</span>
+                                <h3 class="work-name">Apex Fitness</h3>
+                                <div class="view-project-btn"><i class="ri-arrow-right-up-line"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Project 3 -->
+                    <a href="#" class="work-card reveal-up span-wide interactable">
+                        <div class="work-img project-3"></div>
+                        <div class="work-overlay">
+                            <div class="work-info">
+                                <span class="work-tag">Full Rebrand</span>
+                                <h3 class="work-name">Nomad Coffee Roasters</h3>
+                                <div class="view-project-btn"><i class="ri-arrow-right-up-line"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Project 4 -->
+                    <a href="#" class="work-card reveal-up stagger-1 interactable">
+                        <div class="work-img project-4"></div>
+                        <div class="work-overlay">
+                            <div class="work-info">
+                                <span class="work-tag">Web + Social</span>
+                                <h3 class="work-name">Lumina Tech</h3>
+                                <div class="view-project-btn"><i class="ri-arrow-right-up-line"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="text-center spacer-top reveal-up">
+                    <span class="glass-badge">More Coming Soon ✨</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">What Clients Say</h2>
+                </div>
+                <div class="testimonial-scroller reveal-up stagger-1">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card glass-card interactable">
+                        <div class="stars">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="quote">"Deload completely transformed our online presence. Our new website is lightning-fast and beautifully captures our brand's essence. Sales have gone up nearly 40%."</p>
+                        <div class="client-info">
+                            <h4 class="client-name">Sarah M.</h4>
+                            <span class="client-biz">Owner of Bloom Bakery</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card glass-card interactable">
+                        <div class="stars">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="quote">"The social media reels they created for us blew up. They knew exactly how to hook the audience. Best agency experience we've had, hands down."</p>
+                        <div class="client-info">
+                            <h4 class="client-name">Raj K.</h4>
+                            <span class="client-biz">Founder of FitCore Studio</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card glass-card interactable">
+                        <div class="stars">
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="quote">"Everything from communication to execution was top-notch. They actually listen to what you want and figure out the exact strategy to make it happen."</p>
+                        <div class="client-info">
+                            <h4 class="client-name">Mei L.</h4>
+                            <span class="client-biz">CEO of NovaNails</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+            <div class="container text-center">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="section-subtitle mx-auto">Tell us about your project and we'll get back to you within 24 hours.</p>
+                </div>
+                <div class="form-wrapper glass-card form-glass reveal-up stagger-1">
+                    <!-- IMPORTANT: Replace the ID below with your actual embed ID from Google Forms -> Share -> Embed -->
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeW2dnSgvMJ5Hd45Mw6/viewform?embedded=true"
+                        width="100%"
+                        height="700"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
+                        title="Contact Form">
+                        Loading…
+                    </iframe>
+                </div>
+                
+                <div class="contact-info-row reveal-up stagger-2">
+                    <a href="mailto:hello@deload.agency" class="contact-pill interactable"> <!-- Replace with real email -->
+                        <i class="ri-mail-line"></i> hello@deload.agency
+                    </a>
+                    <a href="#" class="contact-pill interactable"> <!-- Replace with real IG -->
+                        <i class="ri-instagram-line"></i> @deload.agency
+                    </a>
+                    <a href="#" class="contact-pill interactable"> <!-- Replace with real WA -->
+                        <i class="ri-whatsapp-line"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Deloa<span class="accent-text">d</span></a>
+                    <p class="footer-tagline">We build presence where attention matters.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Navigate</h4>
+                    <a href="#services" class="interactable">Services</a>
+                    <a href="#work" class="interactable">Work</a>
+                    <a href="#about" class="interactable">About</a>
+                    <a href="#contact" class="interactable">Contact</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Socials</h4>
+                    <a href="#" class="interactable">Instagram</a> <!-- Replace links -->
+                    <a href="#" class="interactable">LinkedIn</a>
+                    <a href="#" class="interactable">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Deload Agency. All rights reserved.</p>
+                <div class="bottom-links">
+                    <a href="#" class="interactable">Privacy Policy</a>
+                    <a href="#" class="interactable">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
