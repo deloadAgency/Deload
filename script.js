@@ -128,4 +128,73 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }, 1000 / fps);
     }
+
+    // 7. Magnetic Buttons
+    const magnetically = document.querySelectorAll('.magnetic');
+    
+    // Only apply magnetic effect on desktop (pointer: fine)
+    if (window.matchMedia("(pointer: fine)").matches) {
+        magnetically.forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                btn.style.transition = 'none'; // removing CSS transition avoids lag
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                
+                // Scale factor for how much it pulls
+                const pullX = x * 0.3;
+                const pullY = y * 0.3;
+                
+                btn.style.transform = `translate(${pullX}px, ${pullY}px) scale(1.02)`;
+            });
+            
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transition = 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+                btn.style.transform = `translate(0px, 0px) scale(1)`;
+            });
+        });
+    }
+
+    // 8. FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all
+            faqItems.forEach(faq => {
+                faq.classList.remove('active');
+                faq.querySelector('.faq-answer').style.maxHeight = null;
+            });
+            
+            // Open clicked if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+                const answer = item.querySelector('.faq-answer');
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
+
+    // 9. Interactive 3D Globe Tilt
+    const globe = document.querySelector('.globe');
+    const globeContainer = document.querySelector('.globe-container');
+    
+    if (globe && globeContainer && window.matchMedia("(pointer: fine)").matches) {
+        globeContainer.addEventListener('mousemove', (e) => {
+            const rect = globeContainer.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            // Calculate rotation (invert X&Y axis for natural tilt away from cursor)
+            const rotateY = (x / rect.width) * 40; // max 20deg
+            const rotateX = -(y / rect.height) * 40; // max 20deg
+            
+            globe.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        
+        globeContainer.addEventListener('mouseleave', () => {
+            globe.style.transform = `rotateX(0deg) rotateY(0deg)`;
+        });
+    }
 });
